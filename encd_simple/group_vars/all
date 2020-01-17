@@ -4,3 +4,6 @@
 httpd_port: 80
 ntpserver: 192.168.1.2
 repository: https://github.com/bennojoy/mywebapp.git
+
+# AWS Launch wizard: ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20191002
+ami_id: ami-06d51e91cea0dac8d
