@@ -1,0 +1,32 @@
+# demo_setup.yml
+# availability_zone, instance_role, security_group
+# availability_zone: 'us-west-2a'
+# instance_role: 'encoded-instance'
+# security_groups: 'ssh-http-https'
+# state: 'running'
+- hosts: localhost 
+  gather_facts: False
+  tasks:
+      - name: Provision a set of instances
+        ec2:
+            image: "{{ ami_id }}"
+            instance_type: 't2.micro'
+            key_name: 'encoded-dev'
+            profile: 'default'
+            region: 'us-west-2'
+            vpc_subnet_id: 'subnet-e93b6582'
+            wait: true
+            exact_count: 1
+            count_tag:
+               Name: 'ansible-test'
+            instance_tags:
+               Name: 'ansible-test'
+               branch: 'n/a/'
+               commit: 'n/a'
+               started_by: 'casey'
+            volumes:
+            - device_name: /dev/sda1
+              volume_size: 200
+              delete_on_termination: true 
+              volumne_type: gp2
+        register: ec2
