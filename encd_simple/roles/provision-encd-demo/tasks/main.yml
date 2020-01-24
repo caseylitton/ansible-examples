@@ -1,0 +1,3 @@
+---
+# Steps to make a basic encode application demo instance
+- include: create_aws_demo_instance.yml

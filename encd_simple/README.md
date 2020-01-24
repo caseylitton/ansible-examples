@@ -1,6 +1,9 @@
 # ENCODE Simple
 1. Provision AWS instance with ssh access
 
+
+
+
 # Original
 Building a simple LAMP stack and deploying Application using Ansible Playbooks.
 -------------------------------------------

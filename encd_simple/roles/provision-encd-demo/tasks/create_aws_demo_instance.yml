@@ -1,0 +1,47 @@
+---
+# These tasks create an aws instance
+
+
+- name: Filter for instance ids with tag:Name
+  ec2_instance_info:
+    profile: 'default'
+    region: 'us-west-2'
+    filters: 
+        "tag:Name": "{{ tag_name }}"
+        instance-state-name: [ "running" ]
+  register: ec2_list
+
+  # - name: Terminate tag:Name instances by id
+  #   ec2:
+  #       profile: 'default'
+  #       region: 'us-west-2'
+  #       state: 'absent'
+  #       instance_ids: "{{ item.instance_id }}"
+  #   loop: "{{ ec2_list.instances }}"
+  # 
+  # - name: Create Aws Demo Instance with tag:Name
+  #   ec2:
+  #       group: 'ssh-http-https'
+  #       image: "{{ ami_id }}"
+  #       instance_profile_name: 'encoded-instance'
+  #       instance_type: 't2.micro'
+  #       key_name: 'encoded-dev'
+  #       profile: 'default'
+  #       region: 'us-west-2'
+  #       vpc_subnet_id: 'subnet-e93b6582'
+  #       wait: true
+  #       zone: 'us-west-2a'
+  #       exact_count: 1
+  #       count_tag:
+  #          Name: 'ansible-test'
+  #       instance_tags:
+  #          Name: 'ansible-test'
+  #          branch: 'na'
+  #          commit: 'na'
+  #          started_by: 'casey'
+  #       volumes:
+  #       - device_name: /dev/sda1
+  #         volume_size: 200
+  #         delete_on_termination: true 
+  #         volumne_type: gp2
+  #   register: ec2

@@ -735,6 +735,61 @@
         "ec2_virtualization_type": "hvm",
         "ec2_vpc_id": "vpc-ea3b6581"
       },
+      "35.165.189.37": {
+        "ansible_host": "35.165.189.37",
+        "ec2__in_monitoring_element": false,
+        "ec2_account_id": "618537831167",
+        "ec2_ami_launch_index": "0",
+        "ec2_architecture": "x86_64",
+        "ec2_block_devices": {
+          "sda1": "vol-0940981fd4ea56ce4"
+        },
+        "ec2_client_token": "",
+        "ec2_dns_name": "ec2-35-165-189-37.us-west-2.compute.amazonaws.com",
+        "ec2_ebs_optimized": false,
+        "ec2_eventsSet": "",
+        "ec2_group_name": "",
+        "ec2_hypervisor": "xen",
+        "ec2_id": "i-0f57f4f91847f9337",
+        "ec2_image_id": "ami-06d51e91cea0dac8d",
+        "ec2_instance_type": "t2.micro",
+        "ec2_ip_address": "35.165.189.37",
+        "ec2_item": "",
+        "ec2_kernel": "",
+        "ec2_key_name": "encoded-dev",
+        "ec2_launch_time": "2020-01-17T23:01:04.000Z",
+        "ec2_monitored": false,
+        "ec2_monitoring": "",
+        "ec2_monitoring_state": "disabled",
+        "ec2_persistent": false,
+        "ec2_placement": "us-west-2a",
+        "ec2_platform": "",
+        "ec2_previous_state": "",
+        "ec2_previous_state_code": 0,
+        "ec2_private_dns_name": "ip-172-31-16-36.us-west-2.compute.internal",
+        "ec2_private_ip_address": "172.31.16.36",
+        "ec2_public_dns_name": "ec2-35-165-189-37.us-west-2.compute.amazonaws.com",
+        "ec2_ramdisk": "",
+        "ec2_reason": "",
+        "ec2_region": "us-west-2",
+        "ec2_requester_id": "",
+        "ec2_root_device_name": "/dev/sda1",
+        "ec2_root_device_type": "ebs",
+        "ec2_security_group_ids": "sg-022ea667",
+        "ec2_security_group_names": "ssh-http-https",
+        "ec2_sourceDestCheck": "true",
+        "ec2_spot_instance_request_id": "",
+        "ec2_state": "running",
+        "ec2_state_code": 16,
+        "ec2_state_reason": "",
+        "ec2_subnet_id": "subnet-e93b6582",
+        "ec2_tag_Name": "ansible-test",
+        "ec2_tag_branch": "na",
+        "ec2_tag_commit": "na",
+        "ec2_tag_started_by": "casey",
+        "ec2_virtualization_type": "hvm",
+        "ec2_vpc_id": "vpc-ea3b6581"
+      },
       "35.166.28.235": {
         "ansible_host": "35.166.28.235",
         "ec2__in_monitoring_element": false,
@@ -1742,6 +1797,9 @@
   "ami_01856409bf6ea9d98": [
     "35.166.28.235"
   ],
+  "ami_06d51e91cea0dac8d": [
+    "35.165.189.37"
+  ],
   "ami_06f2f779464715dc5": [
     "35.162.75.103"
   ],
@@ -1783,6 +1841,7 @@
     "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
   ],
   "ec2": [
+    "ec2-54-215-2-54.us-west-1.compute.amazonaws.com",
     "52.25.250.155",
     "54.203.181.168",
     "34.209.241.240",
@@ -1812,8 +1871,8 @@
     "52.36.27.13",
     "54.214.172.40",
     "34.222.234.166",
-    "35.162.75.103",
-    "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
+    "35.165.189.37",
+    "35.162.75.103"
   ],
   "i-001018c0aa19623fe": [
     "34.220.160.6"
@@ -1905,6 +1964,9 @@
   "i-0f041bb3a8ff91c00": [
     "34.213.136.53"
   ],
+  "i-0f57f4f91847f9337": [
+    "35.165.189.37"
+  ],
   "i-d3ec0288": [
     "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
   ],
@@ -1914,10 +1976,14 @@
   "key_encoded_demos": [
     "35.166.28.235"
   ],
+  "key_encoded_dev": [
+    "35.165.189.37"
+  ],
   "key_stuart_encode_dev": [
     "35.162.75.103"
   ],
   "platform_undefined": [
+    "ec2-54-215-2-54.us-west-1.compute.amazonaws.com",
     "52.25.250.155",
     "54.203.181.168",
     "34.209.241.240",
@@ -1947,8 +2013,8 @@
     "52.36.27.13",
     "54.214.172.40",
     "34.222.234.166",
-    "35.162.75.103",
-    "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
+    "35.165.189.37",
+    "35.162.75.103"
   ],
   "security_group_all_to_http": [
     "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
@@ -1987,7 +2053,11 @@
     "52.36.27.13",
     "54.214.172.40",
     "34.222.234.166",
+    "35.165.189.37",
     "35.162.75.103"
+  ],
+  "tag_Name_ansible_test": [
+    "35.165.189.37"
   ],
   "tag_Name_checkfiles_chk_44_md5_update_ec0fdcf_jessica": [
     "34.209.241.240"
@@ -2138,6 +2208,9 @@
   "tag_branch_master": [
     "54.203.181.168"
   ],
+  "tag_branch_na": [
+    "35.165.189.37"
+  ],
   "tag_branch_v94_0": [
     "54.202.14.64",
     "54.202.31.81",
@@ -2216,6 +2289,9 @@
   "tag_commit_ec0fdcf": [
     "34.209.241.240"
   ],
+  "tag_commit_na": [
+    "35.165.189.37"
+  ],
   "tag_ec_cluster_name_v94x0_test_cluster": [
     "54.202.14.64",
     "54.202.31.81",
@@ -2256,7 +2332,8 @@
     "34.222.7.3",
     "54.203.232.118",
     "34.210.109.166",
-    "35.166.28.235"
+    "35.166.28.235",
+    "35.165.189.37"
   ],
   "tag_started_by_emmao": [
     "34.216.211.24",
@@ -2342,7 +2419,8 @@
     "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
   ],
   "type_t2_micro": [
-    "52.25.250.155"
+    "52.25.250.155",
+    "35.165.189.37"
   ],
   "us-west-1": [
     "ec2-54-215-2-54.us-west-1.compute.amazonaws.com"
@@ -2380,6 +2458,7 @@
     "52.36.27.13",
     "54.214.172.40",
     "34.222.234.166",
+    "35.165.189.37",
     "35.162.75.103"
   ],
   "us-west-2a": [
@@ -2408,7 +2487,8 @@
     "35.166.28.235",
     "52.36.27.13",
     "54.214.172.40",
-    "34.222.234.166"
+    "34.222.234.166",
+    "35.165.189.37"
   ],
   "us-west-2b": [
     "52.25.250.155",
@@ -2448,6 +2528,7 @@
     "52.36.27.13",
     "54.214.172.40",
     "34.222.234.166",
+    "35.165.189.37",
     "35.162.75.103"
   ]
 }
